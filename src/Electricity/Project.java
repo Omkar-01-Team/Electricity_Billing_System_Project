@@ -19,7 +19,7 @@ public class Project extends JFrame implements ActionListener{
         JLabel l1 = new JLabel(icc3);
         add(l1);
 
-        /* First Column */
+        //First Column
         JMenuBar mb  = new JMenuBar();
         JMenu master = new JMenu("Master");
         JMenuItem m1 = new JMenuItem("New Customer");
@@ -28,7 +28,7 @@ public class Project extends JFrame implements ActionListener{
         master.setForeground(Color.BLUE);
 
 
-        /* ---- Customer Details ---- */
+        //Customer Details
         m1.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon1 = new ImageIcon(ClassLoader.getSystemResource("icon/icon1.png"));
         Image image1 = icon1.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -37,7 +37,7 @@ public class Project extends JFrame implements ActionListener{
         m1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, ActionEvent.CTRL_MASK));
         m1.setBackground(Color.WHITE);
 
-        /* ---- Meter Details ---- */
+        //Meter Details
         m2.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon2 = new ImageIcon(ClassLoader.getSystemResource("icon/icon2.png"));
         Image image2 = icon2.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -46,7 +46,7 @@ public class Project extends JFrame implements ActionListener{
         m2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_M, ActionEvent.CTRL_MASK));
         m2.setBackground(Color.WHITE);
 
-        /* ---- Deposit Details  ----- */
+        //Deposit Details
         m3.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon3 = new ImageIcon(ClassLoader.getSystemResource("icon/icon3.png"));
         Image image3 = icon3.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -62,14 +62,14 @@ public class Project extends JFrame implements ActionListener{
         // --------------------------------------------------------------------------------------------
 
 
-        /* Second Column */
+        //Second Column
         JMenu user = new JMenu("User");
         JMenuItem u1 = new JMenuItem("Pay Bill");
         JMenuItem u2 = new JMenuItem("Calculate Bill");
         JMenuItem u3 = new JMenuItem("Last Bill");
         user.setForeground(Color.RED);
 
-        /* ---- Pay Bill ---- */
+        //Pay Bill
         u1.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon4 = new ImageIcon(ClassLoader.getSystemResource("icon/icon4.png"));
         Image image4 = icon4.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -78,7 +78,7 @@ public class Project extends JFrame implements ActionListener{
         u1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_P, ActionEvent.CTRL_MASK));
         u1.setBackground(Color.WHITE);
 
-        /* ---- Bill Details ---- */
+        //Bill Details
         u2.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon5 = new ImageIcon(ClassLoader.getSystemResource("icon/icon5.png"));
         Image image5 = icon5.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -87,7 +87,7 @@ public class Project extends JFrame implements ActionListener{
         u2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_B, ActionEvent.CTRL_MASK));
         u2.setBackground(Color.WHITE);
 
-        /* ---- Last Bill ----*/
+        //Last Bill
         u3.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon6 = new ImageIcon(ClassLoader.getSystemResource("icon/icon6.png"));
         Image image6 = icon6.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -103,12 +103,12 @@ public class Project extends JFrame implements ActionListener{
 
         // ---------------------------------------------------------------------------------------------
 
-        /* Third Column*/
+        //Third Column
         JMenu report = new JMenu("Report");
         JMenuItem r1 = new JMenuItem("Generate Bill");
         report.setForeground(Color.BLUE);
 
-        /* ---- Report ---- */
+        //Report
         r1.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon7 = new ImageIcon(ClassLoader.getSystemResource("icon/icon7.png"));
         Image image7 = icon7.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -121,14 +121,14 @@ public class Project extends JFrame implements ActionListener{
 
         // -----------------------------------------------------------------------------------------------
 
-        /* Fourth Column*/
+        //Fourth Column
         JMenu utility = new JMenu("Utility");
         JMenuItem ut1 = new JMenuItem("Notepad");
         JMenuItem ut2 = new JMenuItem("Calculator");
         JMenuItem ut3 = new JMenuItem("Web Browser");
         utility.setForeground(Color.RED);
 
-        /* ---- Calender ---- */
+        //Calender
         ut1.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon8 = new ImageIcon(ClassLoader.getSystemResource("icon/icon12.png"));
         Image image8 = icon8.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -137,7 +137,7 @@ public class Project extends JFrame implements ActionListener{
         ut1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_C, ActionEvent.CTRL_MASK));
         ut1.setBackground(Color.WHITE);
 
-        /* ---- Calculator ---- */
+        //Calculator
         ut2.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon9 = new ImageIcon(ClassLoader.getSystemResource("icon/icon9.png"));
         Image image9 = icon9.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -146,7 +146,7 @@ public class Project extends JFrame implements ActionListener{
         ut2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_X, ActionEvent.CTRL_MASK));
         ut2.setBackground(Color.WHITE);
 
-        /* ---- Web Browser ---- */
+        //Web Browser
         ut3.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon10 = new ImageIcon(ClassLoader.getSystemResource("icon/icon10.png"));
         Image image10 = icon10.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
@@ -162,12 +162,12 @@ public class Project extends JFrame implements ActionListener{
 
         // ---------------------------------------------------------------------------------------
 
-        /*Fifth Column */
+        //Fifth Column
         JMenu exit = new JMenu("Exit");
         JMenuItem ex = new JMenuItem("Exit");
         exit.setForeground(Color.BLUE);
 
-        /* ---- Exit ---- */
+        //Exit
         ex.setFont(new Font("monospaced",Font.PLAIN,12));
         ImageIcon icon11 = new ImageIcon(ClassLoader.getSystemResource("icon/icon11.png"));
         Image image11 = icon11.getImage().getScaledInstance(20, 20,Image.SCALE_DEFAULT);
